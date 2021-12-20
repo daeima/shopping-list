@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: #122932;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header,
+form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+}
+
+#add-item {
+  color: #00A6A6;
+  background: white;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#add-item:hover {
+  color: #F49F0A;
+  /* color: white; */
+}
+
+.container-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.item-div {
+  margin: 0.5rem;
+  background: white;
+  color: #122932;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .5s ease-out;
+}
+
+.item-div li {
+  flex: 1;
+}
+
+.check-btn,
+.delete-btn {
+  background: #CC3363;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.check-btn {
+  background: #F49F0A;
+}
+
+.item {
+  padding: 0 0.5rem;
+}
+
+.fa-check-circle,
+.fa-minus-circle {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.remove {
+  transform: translate(9rem) ;
+  opacity: 0;
+}
